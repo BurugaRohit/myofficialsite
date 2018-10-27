@@ -1,0 +1,245 @@
+{% extends "layout.html" %}
+{% block body %}
+
+            <!--Home Sections-->
+            <section id="home" class="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home">
+                            <div class="col-sm-6">
+                                <div class="home-shadow text-right">
+                                    <img src="{{url_for('static',filename='images/shadow-img.png')}}" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="home_text text-left">
+                                    <h4>Hello fellas, I'm a Freelancer</h4>
+                                    <h1 class="text-black">Rohit Buruga ツ</h1>
+                                </div>
+
+                                <div class="home_btns m-top-40 text-center">
+                                    <a href="#about" class="btn btn-primary m-top-20">about me</a>
+                                </div>
+
+                                <a class="mouse-scroll" href="#about">
+                                    <span class="mouse">
+                                        <span class="mouse-movement"></span>
+                                    </span>
+                                    <span class="mouse-message fadeIn">scroll</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+
+            <!--About Section-->
+            <section id="about" class="about bg-light roomy-150">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_about">
+                            <div class="col-md-5 col-md-offset-1">
+                                <div class="about_content">
+                                    <div class="head_right">
+                                        <h2>About me</h2>
+                                    </div>
+                                    <div class="about_content_text">
+                                        <p>"It's me your Rohit. I’m from AndhraPradesh. I live in Vijayawada. I’m 21 years old.
+                              I like desiging because it repulses my creativity skills which are used for creating websites, designing photos etc. I don’t like laziness in me because sometimes  due to
+                              heavy work i goona sleep too long.
+                              In my free time, search for new technologies.
+                              My favourite game is gambling.
+                              I have one brother.
+                              In the future, I’d like to become Root of Top Web-designer".</p>
+
+                                        <div class="divider1 m-top-10"></div>
+
+                                        <div class="about_content_item m-top-30">
+                                            <h6><i class="fa fa-graduation-cap"></i> Education History</h6>
+                                            <ul>
+
+                                              <style media="screen">
+                                                .btn-danger{
+                                                  background-color: #ddd;
+                                                   border: none;
+                                                   color: black;
+                                                   padding: 10px 20px;
+                                                   text-align: center;
+                                                   text-decoration: none;
+                                                   display: inline-block;
+                                                   margin: 4px 2px;
+                                                   cursor: pointer;
+                                                   border-radius: 16px;
+
+                                                }
+                                              </style>
+
+                                              <button  class="btn-danger" data-toggle="collapse" data-target="#college"><i class="fa fa-chevron-right"></i>B.tech | 2014-2018</button>
+                                                <li id="college">
+                                                  <h4>V.R Siddhartha Engineering College</h4>
+                                    	   					<p>The college sponsored by <span>Siddhartha Academy</span> of General and Technical Education was established in 1977 as the 1st private self financing engineering college in the state of Andhra Pradesh. The academy cited is a registered society consisting of 250 philanthropists hailing from various professions, namely Doctors, Charted Accountants, Engineers, etc The college commenced its operations with an annual intake of 180 into 4 branches of engineering (Civil Engineering, Electronics & Communication Engineering,  Electrical & Electronics Engineering & Mechanical Engineering) and the institution has been growing from strength to strength.</p>
+                                                </li>
+
+                                              <button class="btn-danger" data-toggle="collapse" data-target="#inter"><i class="fa fa-chevron-right"></i>Intermediate | 2012-2014</button>
+                                                <li id="inter">
+                                                  <h4>Sri Chaitanya Juniour College</h4>
+                                    	   					<p>Build the castle of professional success with the strongest foundation laid at the college level. Join <span>Sri Chaitanya Junior Colleges</span>  and shape up the most enviable academic success as a stepping stone for your dream career. The colleges have carved a niche for themselves and are well spread across two states of Telangana and Andhra Pradesh. Tremendous patronage has crux of the inspiring story with customised syllabus for integrated training, focused and dedicated and proven faculty to to script your excellence in the course of choice and above all a friendly ambience that oozes spirit of participation, sense of competition and bent of innovation.</p>
+                                                </li>
+
+                                             <button class="btn-danger" data-toggle="collapse" data-target="#school"><i class="fa fa-chevron-right"></i>School | 2000-2012</button>
+                                               <li id="school">
+                                                 <h4>M.K Gandhi Concept School</h4>
+                                                 <p>Schooling is a different arena rather than college. My School is located at Vijayawada, Badavpet.
+                                                 Our School Principal <span>Dr.B.Ravi Prasad</span> garu well-educated & reputated person.Our school consists of 50 teachers,
+                                               20 workers. There is a playzone for LKG/UKG kids. Lot to say about my school.
+                                             If anyone visit Vijayawada u can contact me- i will take you people to my wonderful school.</p>
+                                               </li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div><!-- End off col-md-6 -->
+
+                            <div class="col-md-5 col-md-offset-1 sm-m-top-50">
+
+                                <div class="about_left_item m-top-50">
+                                    <img src="{{url_for('static',filename='images/about-img1.jpg')}}" alt="" />
+                                </div>
+
+                                <div class="about_socail m-top-50">
+                                    <ul class="list-inline">
+                                        <li><span class="divider"></span></li>
+                                        <li><a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=act&pli=1"><i class="fa fa-google"></i></a></li>
+                                        <li><a href="https://twitter.com/RohithBuruga"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/rohit-buruga-42a832140/"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=8106307498&text=Happy%20to%20see%20you"><i class="fa fa-whatsapp"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCgsjo0-VlYWp1cyrY06sbFw?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- End off col-md-6 -->
+
+                        </div><!-- End off Main About -->
+
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off About us Section -->
+
+
+            <!--Choose Section-->
+            <section id="services" class="choose bg-light roomy-150">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_choose">
+                            <div class="col-md-5">
+                                <div class="choose_item">
+                                    <div class="head_right">
+                                        <h2>what I do</h2>
+                                    </div>
+                                    <div class="choose_item_text">
+                                      <br>
+                                      <br>
+                                      <br>
+
+                                        <p>Let <span> <b>T h i n k</b> </span>--Set <span> <b>R e q u i r e m e n t s</b> </span>--Go <span><b> C o n t a c t </b></span> Me!</p>
+
+
+                                    </div>
+                                    <div class="choose_btn text-center m-top-100">
+                                        <a href="#contact" class="btn btn-primary">Hire me</a>
+                                        <a href="http://www.mediafire.com/file/c7ecgppdnmtffp6/Basic+Resume.docx" class="btn btn-primary">Download C V</a>
+                                    </div>
+
+                                </div>
+                            </div> <!-- End off col-md-6 -->
+
+                            <div class="col-md-6 col-md-offset-1 sm-m-top-50">
+                                <div class="choose_list fix">
+                                    <div class="choose_list_item fix">
+                                        <div class="choose_icon">
+                                            <i class="fa fa-diamond"></i>
+                                        </div>
+                                        <div class="list_item_text">
+                                            <h5>Branding Identity</h5>
+                                            <p>A brand is a name, term, design, symbol, or other feature that distinguishes an organization or product from its rivals in the eyes of the customer. Brands are used in business, marketing, and advertising. Name brands are sometimes distinguished from generic or store brands.</p>
+                                        </div>
+                                    </div>
+                                    <div class="choose_list_item fix m-top-40">
+                                        <div class="choose_icon">
+                                            <i class="fa fa-tablet"></i>
+                                        </div>
+                                        <div class="list_item_text">
+                                            <h5>UI/UX Design</h5>
+                                            <p>User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="choose_list_item fix m-top-40">
+                                        <div class="choose_icon">
+                                            <i class="fa fa-send-o"></i>
+                                        </div>
+                                        <div class="list_item_text">
+                                            <h5>Graphic Design</h5>
+                                            <p>Graphic design is the process of visual communication and problem-solving through the use of typography, photography and illustration. The field is considered a subset of visual communication and communication design, but sometimes the term "graphic design" is used synonymously.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End off row -->
+                </div> <!-- End off container -->
+            </section> <!-- End off Choose Section-->
+
+
+
+            <!--Contact Section-->
+            <section id="contact" class="contact bg-white roomy-150">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_contact">
+                            <div class="head_title">
+                                <h5><span class="divider"></span> Get enquiries now</h5>
+                            </div>
+                            <div class="col-md-5">
+                                <form class="m-top-50" action="/home" method="post" id='first_form'>
+
+                                    <div class="form-group">
+                                      <label for="user_name">Full Name</label>
+
+                                        <input type="text" class="form-control" name="name" id="user_name">
+                                        <br>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">E-mail</label>
+                                        <input type="text" class="form-control" name="email" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="password">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="mobilenumber">Mobile-Number</label>
+                                        <input type="text" class="form-control" name="mobile" id="mobilenumber">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="budget">Budget</label>
+                                        <input type="text" class="form-control" name="budget" id="budget">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" name="subject" id="subject">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="message">Message</label>
+                                        <textarea class="form-control" rows="5" name="message" id="message"></textarea>
+                                    </div>
+                                    <div class="form_btn text-right m-top-50">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </div>
+
+                                    </div>
+                                </form>
+
+
+{% endblock %}
